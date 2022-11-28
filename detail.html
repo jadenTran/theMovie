@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Movies Detail</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="./style/style.detail.css" />
+    <link rel="stylesheet" href="./style/style.navbar.css" />
+    <link rel="stylesheet" href="./style/style.posters-section.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-0 page-container">
+      <nav class="container-fluid navbar-container">
+        <div class="navbar__brand">
+          <a href="/index.html" class="navbar__home-link">
+            <img
+              src="https://xemphimz.org/static/skin/logo-full.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="navbar__wrapper">
+          <div class="navbar__wrapper__start">
+            <ul class="navbar__menu">
+              <li class="navbar__item">
+                <i class="fas fa-search"></i>
+                <span>Tìm kiếm</span>
+                <div class="navbar__item--search-box">
+                  <div class="search-box__input-container">
+                    <input
+                      type="text"
+                      name="search-field"
+                      id="search"
+                      class="search-box__input"
+                      placeholder="Nhập tên phim..."
+                    />
+                  </div>
+                  <div class="search-box__search-results">
+                    <div class="row row-cols-2 row-cols-lg-5">
+                      <div class="col">
+                        <div class="poster-block">
+                          <div class="poster-block__poster-image-container">
+                            <a
+                              href="/index.html"
+                              class="poster-block__poster-link"
+                            >
+                              <img
+                                src="https://image.tmdb.org/t/p/w342/dzNHbmjueaGGwS3Rwpb8AAWkHxc.jpg"
+                                alt="movie-poster"
+                              />
+                            </a>
+                          </div>
+                          <div class="poster-block__poster-title-container">
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--vi
+                              "
+                            >
+                              <a href="/index.html">Sẽ Ra Sao Nếu...?</a>
+                            </h3>
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--en
+                              "
+                            >
+                              <a href="/index.html">What If...?</a>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster-block">
+                          <div class="poster-block__poster-image-container">
+                            <a
+                              href="/index.html"
+                              class="poster-block__poster-link"
+                            >
+                              <img
+                                src="https://image.tmdb.org/t/p/w342/iCi4c4FvVdbaU1t8poH1gvzT6xM.jpg"
+                                alt="movie-poster"
+                              />
+                            </a>
+                          </div>
+                          <div class="poster-block__poster-title-container">
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--vi
+                              "
+                            >
+                              <a href="/index.html"
+                                >Suicide Squad: Điệp vụ cảm tử</a
+                              >
+                            </h3>
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--en
+                              "
+                            >
+                              <a href="/index.html">Suicide Squad</a>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster-block">
+                          <div class="poster-block__poster-image-container">
+                            <a
+                              href="/index.html"
+                              class="poster-block__poster-link"
+                            >
+                              <img
+                                src="https://image.tmdb.org/t/p/w342/eRLlrhbdYE7XN6VtcZKy6o2BsOw.jpg"
+                                alt="movie-poster"
+                              />
+                            </a>
+                          </div>
+                          <div class="poster-block__poster-title-container">
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--vi
+                              "
+                            >
+                              <a href="/index.html">Vivo</a>
+                            </h3>
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--en
+                              "
+                            >
+                              <a href="/index.html">Vivo</a>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster-block">
+                          <div class="poster-block__poster-image-container">
+                            <a
+                              href="/index.html"
+                              class="poster-block__poster-link"
+                            >
+                              <img
+                                src="https://image.tmdb.org/t/p/w342/9dKCd55IuTT5QRs989m9Qlb7d2B.jpg"
+                                alt="movie-poster"
+                              />
+                            </a>
+                          </div>
+                          <div class="poster-block__poster-title-container">
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--vi
+                              "
+                            >
+                              <a href="/index.html">Thám hiểm rừng xanh</a>
+                            </h3>
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--en
+                              "
+                            >
+                              <a href="/index.html">Jungle Cruise</a>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster-block">
+                          <div class="poster-block__poster-image-container">
+                            <a
+                              href="/index.html"
+                              class="poster-block__poster-link"
+                            >
+                              <img
+                                src="https://image.tmdb.org/t/p/w342/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg"
+                                alt="movie-poster"
+                              />
+                            </a>
+                          </div>
+                          <div class="poster-block__poster-title-container">
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--vi
+                              "
+                            >
+                              <a href="/index.html"
+                                >Quá Nhanh Quá Nguy Hiểm 9</a
+                              >
+                            </h3>
+                            <h3
+                              class="
+                                poster-block__poster-title
+                                poster-title--en
+                              "
+                            >
+                              <a href="/index.html">Fast & Furious 9 (F9)</a>
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="navbar__item"><span>Phim lẻ</span></li>
+              <li class="navbar__item"><span>Phim bộ</span></li>
+              <li class="navbar__item"><span>Tất cả phim</span></li>
+            </ul>
+          </div>
+          <div class="navbar__wrapper_end">
+            <button type="button" class="btn btn-danger navbar__login-button">Đăng nhập</button>
+            <div class="navbar__login-box">
+              <form class="login-box__inputs-group">
+                <input type="text" name="username" id="username" placeholder="Email đăng nhập">
+                <input type="password" name="password" id="password" placeholder="Mật khẩu">
+              </form>
+              <div class="login-box__buttons-group">
+                <div class="row">
+                  <div class="col">
+                    <div class="login-box__checkbox-container">
+                      <input type="checkbox" name="checkbox" id="checkbox">
+                      <label for="checkbox">Nhớ tài khoản này</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="login-box__login-button btn btn-primary">Đăng nhập</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="login-box__register">
+                      <a href="/index.html">Đăng ký ngay</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="login-box__forgot-password">
+                      <a href="/index.html">Quên mật khẩu?</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="login-box__divider"></div>
+              <div class="login-box__third-parties-login-group d-grid gap-2">
+                  <button class="btn btn-primary" type="button"><i class="fab fa-facebook"></i> Đăng nhập bằng Facebook</button>
+                  <button class="btn btn-danger" type="button"><i class="fab fa-google"></i> Đăng nhập bằng Google</button>
+              </div>
+            </div>
+            <div class="navbar__user-button hidden">
+              <div class="navbar__user-image-container">
+                <img src="./resources/images/default-avatar.jpg" alt="user-image">
+              </div>
+              <p class="navbar__user-name">Duy Nguyễn</p>
+            </div>
+            <div class="navbar__login-box navbar__user-menu-box hidden">
+              <ul class="navbar__user-menu">
+                <li class="navbar__user-menu-item favorite-button"><a href="/favorite.html"><i class="far fa-bookmark"></i>  Danh sách yêu thích</a></li>
+                <li class="navbar__user-menu-item logout-button"><i class="fas fa-sign-out-alt"></i>  Đăng xuất</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="body-section">
+        <div class="body-section__cover"></div>
+        <div class="body-section__container">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <div class="body-section__poster-container">
+                <div class="body-section__poster-image-container">
+                  <img src="" alt="poster" class="body-section__poster" />
+                </div>
+                <button class="btn btn-danger">
+                  <i class="fas fa-play"></i> Xem phim
+                </button>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-9">
+              <h1 class="body-section__main-title"></h1>
+              <h2 class="body-section__sub-title"></h2>
+              <p class="body-section__movie-duration"></p>
+              <div class="body-section__IMDb-rate-container">
+                <span class="body-section__IMDb-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path
+                      d="M44 13H4c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4V17c0-2.2-1.8-4-4-4z"
+                      fill="#ffc107"
+                    ></path>
+                    <path
+                      d="M28.102 18h-3.704v13.102h3.704c2 0 2.796-.403 3.296-.704.602-.398.903-1.097.903-1.796v-7.903c0-.898-.403-1.699-.903-2-.796-.5-1.097-.699-3.296-.699zm.699 10.3c0 .598-.7.598-1.301.598V20c.602 0 1.3 0 1.3.602zM33.8 18v13.3h2.802s.199-.902.398-.698c.398 0 1.5.597 2.2.597.698 0 1.1 0 1.5-.199.6-.398.698-.7.698-1.3v-7.802c0-1.097-1.097-1.796-2-1.796-.898 0-1.796.597-2.199.898v-3zm3.598 4.2c0-.4 0-.598.403-.598.199 0 .398.199.398.597v6.602c0 .398 0 .597-.398.597-.2 0-.403-.199-.403-.597zM22.7 31.3V18h-4.4l-.8 6.3-1.102-6.3h-4v13.3h2.903v-7.402l1.3 7.403h2l1.297-7.403v7.403zM7.602 18h3.097v13.3H7.602z"
+                      fill="#263238"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="body-section__IMDb-score"></span>
+              </div>
+              <div class="body-section__buttons-group gap-2">
+                <div class="body-section__group">
+                  <div class="row g-2">
+                    <div class="col">
+                      <button class="btn btn-primary text-nowrap">
+                        <i class="fab fa-facebook-square"></i> Chia sẻ
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-success add-to-favorite-button text-nowrap">
+                        <i class="fas fa-plus"></i> Yêu thích
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="body-section__group">
+                  <div class="row g-3"></div>
+                </div>
+              </div>
+              <dl class="horizontal-dl">
+                <dt>Đạo diễn</dt>
+                <dd class="csv director-dd">
+                  <a href=""></a>
+                </dd>
+                <dt>Kịch bản</dt>
+                <dd class="csv writing-dd">
+                  <a href=""></a>
+                </dd>
+                <dt>Quốc gia</dt>
+                <dd class="csv country-dd">
+                  <a href=""></a>
+                </dd>
+                <dt>Khởi chiếu</dt>
+                <dd class="released-dd"></dd>
+              </dl>
+              <p class="body-section__movie-description"></p>
+              <div class="carousel">
+                <div class="carousel__header-container">
+                  <span class="carousel__title">Diễn viên</span>
+                  <div class="carousel__paginate-button-group">
+                    <div
+                      class="
+                        carousel__paginate-button
+                        carousel__cast-paginate-button
+                        carousel__cast-paginate-button--left
+                      "
+                    >
+                      <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div
+                      class="
+                        carousel__paginate-button
+                        carousel__cast-paginate-button
+                        carousel__cast-paginate-button--right
+                      "
+                    >
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    carousel__body-container carousel__body-container--cast
+                  "
+                ></div>
+              </div>
+              <div class="carousel">
+                <div class="carousel__header-container">
+                  <span class="carousel__title">Trailer</span>
+                  <div class="carousel__paginate-button-group">
+                    <div
+                      class="
+                        carousel__paginate-button
+                        carousel__trailer-paginate-button
+                        carousel__trailer-paginate-button--left
+                      "
+                    >
+                      <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div
+                      class="
+                        carousel__paginate-button
+                        carousel__trailer-paginate-button
+                        carousel__trailer-paginate-button--right
+                      "
+                    >
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="carousel__body-container carousel__body-container--trailer"
+                >
+                </div>
+              </div>
+              <div class="carousel ">
+                <div class="carousel__header-container">
+                  <span class="carousel__title">Đánh giá</span>
+                </div>
+                <div class="reviews-container">
+                  <div class="d-grid gap-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">Thông báo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Hãy đăng nhập trước khi muốn thêm vào danh sách yêu thích
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/api.home.js"></script>
+    <script src="./script/api.detail.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

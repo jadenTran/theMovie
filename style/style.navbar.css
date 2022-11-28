@@ -1,0 +1,245 @@
+a {
+  color: #FFF;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 2;
+  transition: all .3s ease-in-out;
+}
+
+.navbar-on-scroll {
+  background-color: rgba(51, 10, 103, 0.93);
+}
+
+.navbar-container .navbar__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar-container .navbar__brand .navbar__home-link img {
+  width: 112px;
+  height: 28px;
+}
+
+.navbar-container .navbar__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-container .navbar__wrapper .navbar__wrapper__start .navbar__menu {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container
+  .navbar__wrapper
+  .navbar__wrapper__start
+  .navbar__menu
+  .navbar__item {
+  display: inline-block;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-container
+  .navbar__wrapper
+  .navbar__wrapper__start
+  .navbar__menu
+  .navbar__item:first-child {
+  position: relative;
+}
+
+.navbar__item--search-box {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  top: 65px;
+  width: 80vw;
+  background-color: rgb(14, 40, 66);
+  display: none;
+}
+
+.navbar__item--search-box::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(14, 40, 66);
+  transform: rotate(45deg);
+  display: inline-block;
+  top: 0;
+  left: -13px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__item--search-box .search-box__input-container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.navbar__item--search-box .search-box__input-container .search-box__input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.navbar-container
+  .navbar__wrapper
+  .navbar__wrapper__start
+  .navbar__menu
+  .navbar__item:hover {
+  color: #428bca;
+  background-color: rgb(14, 40, 66);
+}
+
+.navbar__wrapper_end {
+  position: relative;
+}
+
+.navbar__login-box {
+  background-color: rgb(14, 40, 66);
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 30vw;
+  padding: 50px;
+  display: none;
+}
+
+.navbar__login-box::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(14, 40, 66);
+  transform: rotate(-45deg);
+  display: inline-block;
+  top: 0;
+  right: -13px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__login-box .login-box__inputs-group {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.navbar__login-box .login-box__inputs-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+input + input {
+  margin-top: 10px;
+}
+
+.login-box__buttons-group .row + .row {
+  margin-top: 10px;
+}
+
+input + label {
+  margin-left: 10px;
+}
+
+.navbar__login-box .login-box__buttons-group {
+  padding-bottom: 20px;
+}
+
+.navbar__login-box .login-box__buttons-group .login-box__checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.navbar__login-box
+  .login-box__buttons-group
+  .login-box__checkbox-container
+  label,
+.navbar__login-box .login-box__buttons-group .login-box__register a,
+.navbar__login-box .login-box__buttons-group .login-box__forgot-password a {
+  color: #a7a7a7;
+}
+
+.navbar__user-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar__user-image-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.navbar__user-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.navbar__user-name {
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.navbar__user-menu-box {
+  width: 15vw;
+  padding: 10px;
+}
+
+.navbar__user-menu {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__user-menu-item {
+  list-style: none;
+  color: #FFF;
+  cursor: pointer;
+  text-align: right;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.navbar__user-menu-item:hover {
+  color: #428bca;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.body-section-on-blur {
+  filter: blur(4px);
+}

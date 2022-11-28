@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.page-container {
+  background-color: rgb(6, 18, 30);
+}
+
+.body-section {
+  padding: 6rem 0.8rem;
+  transition: filter 0.3s ease-in-out;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.main-view .main-view__filter-container {
+  padding: 15px 20px;
+  background-color: rgb(14, 40, 66);
+  border-radius: 8px;
+  border: none;
+}
+
+.filter-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.filter-block .filter-block__label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.filter-block .filter-block__selector-container {
+  position: relative;
+}
+
+.filter-block .filter-block__selector-container .filter-block__selector {
+  width: 80%;
+  position: relative;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  font-size: 1em;
+  appearance: none;
+  cursor: pointer;
+}
+
+.filter-block .filter-block__selector-container .fa-angle-down {
+  position: absolute;
+  top: 0.8rem;
+  right: 4.5rem;
+  color: #428bca;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-selected {
+  transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.pagination > li > span
+{
+    background-color: white;
+    color: #428bca;
+}
+
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+    cursor: pointer;
+}
+
+.pagination > .active > span
+{
+    color: white;
+    background-color: #428bca !Important;
+    border: solid 1px #428bca !Important;
+}
+
+.pagination > .active > span:hover
+{
+    background-color: #428bca !Important;
+    border: solid 1px #428bca;
+}

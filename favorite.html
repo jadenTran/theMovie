@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Movies Favorite</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="./style/style.index.css" />
+    <link rel="stylesheet" href="./style/style.navbar.css" />
+    <link rel="stylesheet" href="./style/style.posters-section.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-0 page-container">
+      <nav class="container-fluid navbar-container">
+        <div class="navbar__brand">
+          <a href="/index.html" class="navbar__home-link">
+            <img
+              src="https://xemphimz.org/static/skin/logo-full.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="navbar__wrapper">
+          <div class="navbar__wrapper__start">
+            <ul class="navbar__menu">
+              <li class="navbar__item">
+                <i class="fas fa-search"></i>
+                <span>Tìm kiếm</span>
+                <div class="navbar__item--search-box">
+                  <div class="search-box__input-container">
+                    <input
+                      type="text"
+                      name="search-field"
+                      id="search"
+                      class="search-box__input"
+                      placeholder="Nhập tên phim..."
+                    />
+                  </div>
+                  <div class="search-box__search-results">
+                    <div class="row row-cols-2 row-cols-lg-5">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="navbar__item"><span>Phim lẻ</span></li>
+              <li class="navbar__item"><span>Phim bộ</span></li>
+              <li class="navbar__item"><span>Tất cả phim</span></li>
+            </ul>
+          </div>
+          <div class="navbar__wrapper_end">
+            <button type="button" class="btn btn-danger navbar__login-button">Đăng nhập</button>
+            <div class="navbar__login-box">
+              <form class="login-box__inputs-group">
+                <input type="text" name="username" id="username" placeholder="Email đăng nhập">
+                <input type="password" name="password" id="password" placeholder="Mật khẩu">
+              </form>
+              <div class="login-box__buttons-group">
+                <div class="row">
+                  <div class="col">
+                    <div class="login-box__checkbox-container">
+                      <input type="checkbox" name="checkbox" id="checkbox">
+                      <label for="checkbox">Nhớ tài khoản này</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="login-box__login-button btn btn-primary">Đăng nhập</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="login-box__register">
+                      <a href="/index.html">Đăng ký ngay</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="login-box__forgot-password">
+                      <a href="/index.html">Quên mật khẩu?</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="login-box__divider"></div>
+              <div class="login-box__third-parties-login-group d-grid gap-2">
+                  <button class="btn btn-primary" type="button"><i class="fab fa-facebook"></i> Đăng nhập bằng Facebook</button>
+                  <button class="btn btn-danger" type="button"><i class="fab fa-google"></i> Đăng nhập bằng Google</button>
+              </div>
+            </div>
+            <div class="navbar__user-button hidden">
+              <div class="navbar__user-image-container">
+                <img src="./resources/images/default-avatar.jpg" alt="user-image">
+              </div>
+              <p class="navbar__user-name">Duy Nguyễn</p>
+            </div>
+            <div class="navbar__login-box navbar__user-menu-box hidden">
+              <ul class="navbar__user-menu">
+                <li class="navbar__user-menu-item favorite-button"><a href="/favorite.html"><i class="far fa-bookmark"></i>  Danh sách yêu thích</a></li>
+                <li class="navbar__user-menu-item logout-button"><i class="fas fa-sign-out-alt"></i>  Đăng xuất</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="body-section">
+        <div class="container">
+          <div class="main-view">
+            <div class="main-view__posters-container">
+              <div class="main-view__section--favorite">
+                <div class="section__title-container">
+                  <h3 class="section__title">Danh sách yêu thích</h3>
+                </div>
+                <div class="section__posters section__posters--favorite">
+                  <div class="row row-cols-2 row-cols-lg-5">
+                  </div>
+                  <nav class="container d-flex justify-content-end">
+                    <ul class="pagination pagination--favorite">
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/api.home.js"></script>
+    <script src="./script/api.favorite.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
